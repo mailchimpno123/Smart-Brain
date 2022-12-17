@@ -73,7 +73,6 @@ const onButtonSubmit = () => {
         })
     .then(response => response.json())      
     .then(response => {
-      console.log("hi", response);
       if (response) {
         fetch('https://brain.herokuapp.com:/image', {
           method: "put",
