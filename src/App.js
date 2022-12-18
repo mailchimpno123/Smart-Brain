@@ -74,7 +74,7 @@ const onInputChange = (event) => {
     method: 'post',
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify({
-      imageUrl: state.imageUrl
+      imageUrl: imageUrl
     })
   })
   .then(response => response.json())
