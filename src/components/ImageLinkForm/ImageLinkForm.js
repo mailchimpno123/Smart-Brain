@@ -2,7 +2,7 @@ import "./ImageLinkForm.css";
 import React, { useState } from "react";
 
 const ImageLinkForm = ({ onInputChange, onButtonSubmit }) => {
-  const [input, setInput] = useState("");
+  const [pippo, setPippo] = useState("");
 
   return (
     <div>
@@ -14,12 +14,12 @@ const ImageLinkForm = ({ onInputChange, onButtonSubmit }) => {
           <input
             className="f4 pa2 w-70 center"
             type="text"
-            value={input}
-            onChange={(event) => setInput(event.target.value)}
+            value={pippo}
+            onChange={(event) => setPippo(event.target.value)}
           />
           <button
             className="w-30 grow f4 link ph3 pv2 dib white bg-light-purple"
-            onClick={() => onButtonSubmit(input)}
+            onClick={() => onButtonSubmit(pippo)}
           >
             Detect
           </button>
